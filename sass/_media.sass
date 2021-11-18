@@ -8,10 +8,11 @@
     width: 132px
   .navbar
     &-top
-      padding-top: 30px
-      padding-bottom: 30px
+      padding: 0
+      margin-top: 26px
+      margin-bottom: 26px
     &__search
-      margin-left: auto
+      margin-left: 47px
 
     &-menu
       padding-top: 22px
@@ -45,6 +46,8 @@
         width: 16px
         height: 1px
         background-color: $text-color
-@media (max-width: 575px)
+@media (min-width: 320px) and (max-width: 575px)
+  .container
+    width: 87%
   .logo
     width: 99px
