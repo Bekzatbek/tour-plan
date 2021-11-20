@@ -493,9 +493,9 @@ template {
     width: 132px;
   }
   .navbar-top {
-    padding: 0;
-    margin-top: 26px;
-    margin-bottom: 26px;
+    height: 100px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
   .navbar__search {
     margin-left: 47px;
