@@ -493,7 +493,7 @@ template {
     width: 132px;
   }
   .navbar-top {
-    height: 100px;
+    height: 120px;
     padding-top: 26px;
     padding-bottom: 26px;
   }
@@ -514,6 +514,9 @@ template {
 }
 
 @media (max-width: 767px) {
+  .navbar-top {
+    height: 100px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
@@ -550,6 +553,9 @@ template {
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .navbar-top {
+    height: 70px;
+  }
   .container {
     width: 87%;
   }
