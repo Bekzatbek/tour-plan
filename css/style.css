@@ -538,6 +538,10 @@ template {
   margin: 0;
 }
 
+.hotel-star {
+  margin-right: 4px;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
@@ -552,6 +556,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-description {
@@ -561,6 +567,9 @@ template {
 }
 
 .stars {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -591,6 +600,10 @@ template {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+}
+
+.rating .small {
+  font-size: 10px;
 }
 
 @media (max-width: 1200px) {
