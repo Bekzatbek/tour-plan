@@ -165,10 +165,10 @@
             <button class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2068031.5013473788!2d-83.21975624180556!3d28.808790918772342!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e30704c80b7%3A0xd2bb706b496d6eb4!2z0JTQsNCx0LvRgtGA0Lgg0LHQsNC5INCl0LjQu9GC0L7QvSDQpdC-0YLQtdC7INCe0YDQu9Cw0L3QtNC-INGN0YIg0KHQuNGD0L7RgNC70LQ!5e0!3m2!1sru!2snl!4v1637730741953!5m2!1sru!2snl"
-              width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div id="map" class="map">
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+              type="text/javascript"></script>
+
           </div>
           <!-- /.map -->
         </div>
@@ -179,8 +179,10 @@
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
