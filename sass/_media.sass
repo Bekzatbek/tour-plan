@@ -15,6 +15,8 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .newsletter
+    margin-top: -10px
   .logo
     width: 132px
   .navbar
@@ -49,6 +51,19 @@
     width: 100%
   .map
     width: 340px
+    margin-bottom: 0
+    padding-bottom: 0
+  .reviews
+    &-slider
+      &__text
+        width: 100%
+        margin: 0 60px 0 60px
+      &__item
+        max-width: 731px
+    &__title
+      font-size: 30px
+      line-height: 38px
+
 @media (max-width: 767px)
   .navbar
     &-top
@@ -56,6 +71,8 @@
   .container, .newsletter-wrapper
     max-width: 576px
     width: 92%
+  .newsletter
+    margin-top: -28px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -123,7 +140,28 @@
       height: 55px
       &__input
         width: 100%
-
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::before, &::after
+          display: none
+      &__text
+        width: 100%
+        margin: 0 30px 0 30px
+      &__button
+        top: 31px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -65px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+    &__title
+      font-size: 18px
+      line-height: 23px
 @media (max-width: 575px)
   .navbar
     &-top
@@ -152,6 +190,10 @@
     width: 100%
   .booking
     margin-top: 0
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
 @media (min-width: 320px) and (max-width: 400px)
   .navbar
     &-top
@@ -171,3 +213,11 @@
     height: 180px
   .subscribe
     width: 100%
+  .reviews
+    &__title
+      margin: 0 38px 42px 38px
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__text
+        margin: 0 30px 0 30px
