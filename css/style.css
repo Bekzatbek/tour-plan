@@ -1189,7 +1189,7 @@ template {
   -ms-grid-columns: (minmax(min-content, 1fr))[4];
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-gap: 20px;
+  grid-gap: 15px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
   -webkit-box-align: start;
@@ -1206,13 +1206,14 @@ template {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  margin-top: 22px;
+  margin-top: 15px;
 }
 
 .footer__categories {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+  max-height: 218px;
 }
 
 .footer__social-links {
@@ -1316,6 +1317,9 @@ template {
 }
 
 .footer__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
   color: #BDBDBD;
   margin-top: 20px;
   margin-bottom: 22px;
@@ -1325,7 +1329,6 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  margin-top: -4px;
   text-decoration: none;
   color: inherit;
 }
@@ -1334,6 +1337,10 @@ template {
   background-color: #fff;
   border: none;
   border-radius: 4px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   padding: 0 23px;
   margin-bottom: 15px;
   height: 50px;
@@ -1345,7 +1352,12 @@ template {
   background-color: #fff;
   border-radius: 4px;
   padding: 18px 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
   border: none;
+  width: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   max-height: 123px;
@@ -1503,6 +1515,9 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
+  .activities {
+    padding-bottom: 45px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1516,6 +1531,9 @@ template {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .footer {
+    padding-top: 73px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
@@ -1531,6 +1549,8 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
+    width: 104px;
+    height: 120px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1540,6 +1560,7 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin-left: -50px;
   }
   .footer__categories {
     grid-column: span 2;
@@ -1549,21 +1570,26 @@ template {
   }
   .footer__additional {
     grid-column: span 2;
+    margin-left: -38px;
   }
   .footer__legal {
     grid-column: span 2;
     -ms-grid-row: 2;
     grid-row: 2;
+    margin-right: 13px;
   }
   .footer__contact-details {
     grid-column: span 5;
     -ms-grid-row: 3;
     grid-row: 3;
+    margin-top: 20px;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    max-width: 540px;
+    grid-column: span 6;
     -ms-grid-row: 4;
     grid-row: 4;
+    margin-top: -10px;
   }
   .footer__infof {
     position: relative;
@@ -1575,6 +1601,22 @@ template {
   .footer__infof-img {
     position: absolute;
     right: 0;
+  }
+  .container__footiii {
+    margin-top: -40px;
+  }
+  #web {
+    margin-bottom: 15px;
+  }
+  #web__title {
+    white-space: nowrap;
+  }
+  #web__message {
+    min-width: 540px;
+    max-height: 123px;
+  }
+  #web__icon-wrapper {
+    width: 40px;
   }
 }
 
@@ -1730,21 +1772,114 @@ template {
   }
   .footer {
     position: relative;
+    padding-top: 70px;
+  }
+  .footer__item {
+    margin-top: -1px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: 0;
+    width: 104px;
+    max-height: 119px;
+  }
+  .footer__social {
+    position: relative;
+  }
+  .footer__social-network {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-left: 0;
+  }
+  .footer__social-links {
+    position: absolute;
+    margin-top: 45px;
+  }
+  .footer__additional {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: -9px;
+    margin-left: 0;
+  }
+  .footer__categories {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: -9px;
+  }
+  .footer__legal {
+    position: static;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: 30px;
+  }
+  .footer__contact-details {
+    -ms-grid-row: 6;
+    grid-row: 6;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: -20px;
+  }
+  .footer__contact-form {
+    min-width: 281px;
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .footer__infof {
-    position: relative;
+  .footer__button {
+    position: absolute;
+    margin-top: 370px;
   }
-  .footer__infof-footi {
+  .footer__info {
+    -ms-grid-row: 7;
+    grid-row: 7;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    margin-top: -5px;
+  }
+  .footer__title {
+    white-space: nowrap;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 15px;
+  }
+  .container__footiii {
+    margin-top: -10px;
+  }
+  .container__infof {
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .container__infof-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 3px 0 0;
+  }
+  .container__infof-img {
     position: absolute;
     left: 0;
-  }
-  .footer__infof-img {
-    position: absolute;
-    right: 0;
+    padding-top: 30px;
   }
 }
 
@@ -1840,6 +1975,7 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__social-links {
     position: absolute;
@@ -1851,6 +1987,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
     margin-top: -9px;
+    margin-left: 0;
   }
   .footer__categories {
     -ms-grid-row: 5;
@@ -1880,9 +2017,13 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__button {
     position: absolute;
-    margin-top: 380px;
+    margin-top: 370px;
   }
   .footer__info {
     -ms-grid-row: 7;
@@ -1907,7 +2048,7 @@ template {
   .footer__infof-img {
     position: absolute;
     left: 0;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }
 
