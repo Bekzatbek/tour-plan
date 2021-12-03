@@ -1555,7 +1555,7 @@ iframe {
     height: 255px;
   }
   .footer {
-    padding-top: 65px;
+    padding-top: 78px;
   }
   .footer__item {
     font-style: normal;
@@ -1577,8 +1577,10 @@ iframe {
     -ms-grid-row-span: 1;
     grid-row: 1 / 2;
     grid-column: span 2;
-    width: 104px;
-    height: 120px;
+    width: 95px;
+    height: 110px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1595,16 +1597,19 @@ iframe {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+    margin-top: 10px;
   }
   .footer__additional {
     grid-column: span 2;
     margin-left: -38px;
+    margin-top: 10px;
   }
   .footer__legal {
     grid-column: span 2;
     -ms-grid-row: 2;
     grid-row: 2;
     margin-right: 13px;
+    margin-top: 10px;
   }
   .footer__contact-details {
     grid-column: span 5;
@@ -1860,13 +1865,16 @@ iframe {
     font-size: 18px;
     line-height: 23px;
   }
+  .activities {
+    padding-bottom: 48px;
+  }
   .card {
     width: 48%;
     height: 255px;
   }
   .footer {
     position: relative;
-    padding-top: 70px;
+    padding-top: 60px;
   }
   .footer__item {
     margin-top: -1px;
@@ -1880,9 +1888,10 @@ iframe {
     grid-row: 1;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: 0;
-    width: 104px;
-    max-height: 119px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 95px;
+    max-height: 110px;
   }
   .footer__social {
     position: relative;
@@ -1893,7 +1902,7 @@ iframe {
     -ms-grid-column: 1;
     grid-column: 1;
     margin-left: 0;
-    margin-top: -30px;
+    margin-top: -10px;
   }
   .footer__social-links {
     position: absolute;
@@ -1920,7 +1929,7 @@ iframe {
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -2062,8 +2071,8 @@ iframe {
     -ms-grid-column: 1;
     grid-column: 1;
     margin-top: 0;
-    width: 104px;
-    max-height: 119px;
+    width: 95px;
+    max-height: 110px;
   }
   .footer__social {
     position: relative;
@@ -2100,14 +2109,14 @@ iframe {
     grid-row: 3;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: -5px;
+    margin-top: 2px;
   }
   .footer__contact-form {
     min-width: 281px;
@@ -2195,8 +2204,8 @@ iframe {
     width: 260px;
   }
   .footer__logo {
-    width: 104px;
-    max-height: 120px;
+    width: 95px;
+    max-height: 110px;
   }
   .footer__link {
     margin-top: 1px;
