@@ -154,7 +154,13 @@
     &__icon
       &-wrapper
         width: 40px
-
+  .modal
+    &__dialog
+      position: fixed
+      left: 50%
+      top: 50%
+      max-width: 478px
+      padding: 33px 44px
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -388,6 +394,21 @@
         position: absolute
         left: 0
         padding-top: 30px
+  .modal
+    &__dialog
+      position: fixed
+      left: 50%
+      top: 50%
+      width: 340px
+      padding: 20px 25px
+    &__input
+      height: 40px
+    &__message
+      max-width: 302px
+      width: 100%
+      max-height: 123px
+      height: 100%
+      resize: none
 @media (max-width: 575px)
   .navbar
     &-top
@@ -555,3 +576,31 @@
   #foot
     margin-left: -16px
     margin-top: 1px
+  body
+    position: relative
+  .modal
+    &__dialog
+      position: absolute
+      max-width: 340px
+      width: 85%
+      max-height: 487px
+      top: 300px
+      padding: 20px 25px
+      overflow: scroll
+    &__input
+      font-weight: normal
+      font-size: 12px
+      height: 30px
+    &__message
+      font-weight: normal
+      font-size: 12px
+      max-width: 302px
+      width: 100%
+      max-height: 123px
+      height: 100%
+      resize: none
+    &__button
+      margin-top: 20px
+    &__info
+      position: absolute
+      bottom: 80px
