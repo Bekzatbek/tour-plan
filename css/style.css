@@ -1362,6 +1362,7 @@ iframe {
   height: 50px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  cursor: pointer;
 }
 
 .footer__message {
@@ -1378,6 +1379,7 @@ iframe {
       flex-basis: 100%;
   max-height: 123px;
   margin-bottom: 22px;
+  cursor: pointer;
 }
 
 .footer__button {
@@ -1392,6 +1394,7 @@ iframe {
   line-height: 15px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer__info {

@@ -83,7 +83,7 @@
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">
+          <a href="index.html" class="breadcrumb-list__link">
             Home
           </a>
         </li>
@@ -209,7 +209,8 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" maxlength="50"
+          required>
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -473,11 +474,14 @@
             Send us a message
           </h3>
           <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" maxlength="50"
+              required>
 
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" maxlength="15"
+              required>
 
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message" name="message"></textarea>
+            <textarea cols="30" rows="10" class="footer__message" placeholder="Message" name="message"
+              maxlength="150"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
