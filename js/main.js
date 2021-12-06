@@ -38,7 +38,6 @@ const reviewsSlider = new Swiper('.reviews-slider', {
 var menuButton = $(".menu-button");
 menuButton.on("click", function () {
 $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-
 });
 
 var modalButton = $("[data-toggle=modal]");
@@ -46,14 +45,22 @@ var closeModalButton = $(".modal__close");
 modalButton.on('click', openModal);
 closeModalButton.on("click", closeModal);
 
+
+
 function openModal() {
+
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");
   modalOverlay.addClass("modal__overlay--visible");
   modalDialog.addClass("modal__dialog--visible");
+  $("modal__overlay--visible").css("overflow", "auto");
+  $("modal__dialog--visible").css("overflow", "auto");
+ 
+  
 }
 
 function closeModal(event) {
+  
   event.preventDefault();
   var modalOverlay = $(".modal__overlay");
   var modalDialog = $(".modal__dialog");

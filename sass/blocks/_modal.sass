@@ -10,6 +10,7 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
+    overflow: auto
     &--visible
       visibility: visible
       opacity: 1
@@ -31,6 +32,8 @@
     &--visible
       visibility: visible
       opacity: 1
+      max-height: 100%
+      overflow: auto
 
   &__close
     position: absolute
