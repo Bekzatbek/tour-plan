@@ -474,14 +474,16 @@
             Send us a message
           </h3>
           <form action="send.php" method="POST" class="footer__form form">
-            <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="3"
-                maxlength="50" required>
-            </div>
+            <div class="footer__input-block">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="3"
+                  maxlength="50" required>
+              </div>
 
-            <div class="footer__input-group">
-              <input type="tel" id="phone" class="input footer__input" placeholder="Phone Number*" name="phone"
-                minlength="8" maxlength="8" required>
+              <div class="footer__input-group">
+                <input type="tel" id="phone" class="input footer__input" placeholder="Phone Number*" name="phone"
+                  minlength="8" maxlength="8" required>
+              </div>
             </div>
 
             <textarea cols="30" rows="10" class="message footer__message" placeholder="Message" name="message"
