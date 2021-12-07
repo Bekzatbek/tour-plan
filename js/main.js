@@ -99,4 +99,12 @@ $(".subscribe").validate({
   },
 });
 
+$(document).ready(function () {
+$("#phone").mask("+79999999999");
+});
+
+$(document).ready(function () {
+$("#phone-1").mask("+79999999999");
+});
+
 });

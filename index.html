@@ -480,8 +480,8 @@
             </div>
 
             <div class="footer__input-group">
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" minlength="18"
-                maxlength="18" required>
+              <input type="tel" id="phone" class="input footer__input" placeholder="Phone Number*" name="phone"
+                minlength="8" maxlength="8" required>
             </div>
 
             <textarea cols="30" rows="10" class="message footer__message" placeholder="Message" name="message"
@@ -521,11 +521,11 @@
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="3"
           maxlength="50" required>
 
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="18"
-          maxlength="18" aria-invalid="true">
+        <input type="tel" id="phone-1" class="input modal__input" placeholder="Phone Number*" name="phone" required
+          minlength="8" maxlength="8" aria-invalid="true">
         <!-- <label id="phone-error" class="invalid" for="phone">Please specify your phone number</label> -->
 
-        <input type="text" class="input modal__input" placeholder="Email*" name="email" maxlength="15" required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" maxlength="15" required>
 
         <textarea cols="30" rows="10" class="message modal__message" placeholder="Message" name="message"
           maxlength="150"></textarea>
@@ -541,6 +541,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
