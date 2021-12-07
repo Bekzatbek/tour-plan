@@ -60,7 +60,7 @@
           </li>
           <li class="navbar-menu__item navbar-menu__item--mobile--visible">
             <form action="#" class="search navbar__search navbar__search--mobile--visible">
-              <input type="text" class="search__input" placeholder="Search Location">
+              <input type="text" class="search__input" placeholder="Search Location" required>
               <button class="search__button">
                 <img src="img/search.svg" alt="Icon: search">
               </button>
@@ -210,8 +210,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" maxlength="50"
-          required>
+        <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -474,12 +473,16 @@
           <h3 class="footer__title footer__title--mb-3">
             Send us a message
           </h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" maxlength="50"
-              required>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="3"
+                maxlength="50" required>
+            </div>
 
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" maxlength="15"
-              required>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" minlength="18"
+                maxlength="18" required>
+            </div>
 
             <textarea cols="30" rows="10" class="message footer__message" placeholder="Message" name="message"
               maxlength="150"></textarea>
@@ -514,8 +517,9 @@
       <h3 class="modal__title modal__title--mb-3">
         Booking
       </h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" maxlength="50" required>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="3"
+          maxlength="50" required>
 
         <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="18"
           maxlength="18" aria-invalid="true">
@@ -536,6 +540,7 @@
   <script src="js/parallax.min.js"></script> -->
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

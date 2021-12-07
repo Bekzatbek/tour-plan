@@ -19,13 +19,19 @@
     height: 225px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
     max-width: 700px
   .newsletter
     margin-top: -10px
+    .subscribe
+      position: relative
+      height: 75px
+      border: none
+      outline: none
   .logo
     width: 132px
   .navbar
@@ -95,7 +101,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 38px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -366,7 +373,8 @@
       margin-top: 35px
       margin-bottom: 30px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__button
       position: absolute
       margin-top: 370px
@@ -504,7 +512,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__button
       position: absolute
       margin-top: 370px
