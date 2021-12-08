@@ -75,15 +75,15 @@ $(".form").each(function () {
     messages: {
     name: {
       required: "Please specify your name",
-      minlength: "Name must be at least 3 letters"
+      minlength: "Name must be at least 2 letters"
     },
     email: {
       required: "We need your email address to contact you",
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
-       required: "Please specify your phone number"
-       
+       required: "Please specify your phone number",
+       minlength: "please enter a valid phone number"
     }
   },
 });
@@ -100,11 +100,11 @@ $(".subscribe").validate({
 });
 
 $(document).ready(function () {
-$("#phone").mask("+79999999999");
+$("#phone").mask("+7(999) 999-99-99");
 });
 
 $(document).ready(function () {
-$("#phone-1").mask("+79999999999");
+$("#phone-1").mask("+7(999) 999-99-99");
 });
 
 AOS.init();

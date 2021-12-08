@@ -455,9 +455,15 @@
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/phone-call-2.svg" alt="Icon: phone-call-2">
               </div>
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-&nbsp56-61-38 (08:00 am – 20:00 pm) <br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              <div class="footer__phone">
+                Tel (business hours) :
+                <a class="footer__link" href="tel:269 1500">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday:
+                <a class="footer__link" href="tel:52-56-61-38">52-&nbsp;56-61-38</a>&nbsp;(08:00&nbsp;am
+                –&nbsp;20:00&nbsp;pm)<br>
+                Tel (hotline) Sunday:
+                <a class="footer__link" href="tel:52-56-61-38">52-56-61-38</a> (08:00&nbsp;am – 14:00&nbsp;pm)
+              </div>
             </li>
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
@@ -478,13 +484,13 @@
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-block">
               <div class="footer__input-group">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="3"
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="2"
                   maxlength="50" required>
               </div>
 
               <div class="footer__input-group">
                 <input type="tel" id="phone" class="input footer__input" placeholder="Phone Number*" name="phone"
-                  minlength="8" maxlength="8" required>
+                  minlength="10" maxlength="10" required>
               </div>
             </div>
 
@@ -522,12 +528,11 @@
         Booking
       </h3>
       <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="3"
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" minlength="2"
           maxlength="50" required>
 
         <input type="tel" id="phone-1" class="input modal__input" placeholder="Phone Number*" name="phone" required
-          minlength="8" maxlength="8" aria-invalid="true">
-        <!-- <label id="phone-error" class="invalid" for="phone">Please specify your phone number</label> -->
+          minlength="10" maxlength="10" aria-invalid="true">
 
         <input type="email" class="input modal__input" placeholder="Email*" name="email" maxlength="15" required>
 
