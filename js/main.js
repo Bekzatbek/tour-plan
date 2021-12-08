@@ -107,4 +107,6 @@ $(document).ready(function () {
 $("#phone-1").mask("+79999999999");
 });
 
+AOS.init();
+
 });
